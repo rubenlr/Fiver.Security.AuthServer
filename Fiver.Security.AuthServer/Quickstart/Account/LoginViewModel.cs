@@ -6,7 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace IdentityServer4.Quickstart.UI
+namespace Fiver.Security.AuthServer.Quickstart.Account
 {
     public class LoginViewModel : LoginInputModel
     {
