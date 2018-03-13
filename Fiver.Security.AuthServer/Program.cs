@@ -12,8 +12,10 @@ namespace Fiver.Security.AuthServer
 
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
+                .CaptureStartupErrors(true)
+                .UseKestrel()
+                .UseIISIntegration()
                 .UseStartup<Startup>()
-                .UseUrls("http://localhost:5000")
                 .Build();
     }
 }
